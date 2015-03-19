@@ -17,7 +17,7 @@ public class Cookies {
 	Ingrediens natron = new Natron(2, Enhet.TESKJE);
 	Ingrediens havsalt = new Havsalt(1, Enhet.KLYPE);
 	Ingrediens smør = new Smør(280, Enhet.GRAM);
-			   smør.temperatur = romtemperatur;
+			smør.temperatur = romtemperatur;
 	Ingrediens bruntSukker = new Sukker("Brunt", 170, Enhet.GRAM);
 	Ingrediens hvittSukker = new Sukker("Hvitt", 220, Enhet.GRAM);
 	Ingrediens egg = new Egg(1, Enhet.STYKK);
