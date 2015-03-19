@@ -6,7 +6,6 @@ import kitchen;
  * @version 9001
  * Disse cookiene kommer til å gjøre deg til den mest populære på hele Onlinekontoret.
  * Gir cirka 30 cookies
- * 
  */
 public class Cookies {
 	
