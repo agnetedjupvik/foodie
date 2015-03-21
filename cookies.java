@@ -45,7 +45,7 @@ public class Cookies {
 		Ovn ovn = new Ovn(175, Enhet.GRADER);
 		bolle2.removeCover("Plastfolie");
 		Deig cookieDough = new Deig(bolle2);
-		cookieDough.lagBaller(Enhet.GOLFBALLER);
+		cookieDough.lagBaller(Størrelse.GOLFBALLER);
 		if(cookieDough.eserIOvnen()){System.out.println("Deigen hever alltid.");}
 		else{System.out.println("Dette må du ta høyde for.");}
 		
