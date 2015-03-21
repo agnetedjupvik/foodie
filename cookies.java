@@ -2,7 +2,7 @@ import java.util.Collection;
 import kitchen;
 /*
  * Cookies à la Agnete
- * @author aggiemcswaggie
+ * @author aggiemcswaggie && vemundsanti
  * @version 9001
  * Disse cookiene kommer til å gjøre deg til den mest populære på hele Onlinekontoret.
  * Gir cirka 30 cookies
