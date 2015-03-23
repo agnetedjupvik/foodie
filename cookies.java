@@ -46,8 +46,6 @@ public class Cookies {
 		bolle2.removeCover("Plastfolie");
 		Deig cookieDough = new Deig(bolle2);
 		cookieDough.lagBaller(Størrelse.GOLFBALLER);
-		if(cookieDough.eserIOvnen()){System.out.println("Deigen hever alltid.");}
-		else{System.out.println("Dette må du ta høyde for.");}
 		
 		Stekebrett[][] brett = new Stekebrett[3][3];
 		for(int i = 0; i < brett.length; i++){
@@ -56,6 +54,9 @@ public class Cookies {
 				havsalt.sprinkle(brett[i][j]);
 			}
 		}
+		if(cookieDough.eserIOvnen()){System.out.println("De vokser!");}
+		else{throw new IllegalStateException("Du har nok gjort noe feil.");}
+		
 		brett.stek(15, Enhet.MINUTTER);
 		boolean enjoyMeal = true;
 	}
