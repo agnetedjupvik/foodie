@@ -33,6 +33,7 @@ public class TomatoSoup {
 		gryte.addAll(Arrays.asList(tomater, krydder));
 		Thread.sleep(480000); // la det koke i 8 minutter
 
+		//server gjerne med en rømmeklatt :) 
 		public boolean enjoyMeal = true;
 	}
 }
