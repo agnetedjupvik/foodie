@@ -9,6 +9,7 @@ public class RoastedChickpeas{
   /* Ingredienser */
   Ingrediens kikerter = new Kikerter(1, Enhet.HERMETIKKBOKS);
   Ingrediens krydder = new Collection<Krydder>("Salt", "Pepper", "Paprika", "Spisskummen");
+  Ingrediens rapsolje = new Rapsolje(1. Enhet.DESILITER);
   
   /*How-to*/
   public RoastedChickpeas(){
@@ -24,6 +25,7 @@ public class RoastedChickpeas{
     
     bolle.add(kikerter);
     bolle.add(krydder);
+    bolle.add(rapsolje);
     bolle.mix();
 
     stekebrett.addAll(bolle);
