@@ -23,7 +23,7 @@ public class LentilSoup{
   Ingrediens rapsolje = new Rapsolje(1. Enhet.DESILITER);
   
   /* How-to */
-  public RoastedChickpeas(){
+  public LentilSoup(){
     linser.drain();
     
     Equipment stekepanne = new Equipment();
