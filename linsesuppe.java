@@ -1,22 +1,61 @@
-Rød linsesuppe
+import kitchen;
 
-1 liten gul løk, hakket
-1 hvitløkfedd, finhakket
-1 rød chili, finhakket
-1 ts paprikapulver
-6 dl vann
-2 grønnsaksbuljongterninger 
-1 boks hakka tomater
-1 boks røde linser drenert (200g)
-1 boks kokosmelk
-1 ts sukker
-Salt og pepper til smak
+/*
+ * Linsesuppe er en vegetarisk, billig og himla sunn middag. 
+ * @author vebjorns && aggie
+ */
 
-Kutt opp løk, brun med litt olje
-Tilsett hvitløk og chili
-Kok opp vann, tilsett grønnsaksbuljong
-Tilsett linsene, kok 20min
-Tilsett hakka tomater, kokosmelk, paprikapulver, sukker og løkblandingen
-Kok 5min
-Miks med stavmikser
-Smak til med salt og pepper
+public class LentilSoup{ 
+  /* Ingredienser */
+  Ingrediens linser = new RødeLinser(1, Enhet.HERMETIKKBOKS);
+  Ingrediens løk = new Løk(1, Enhet.STK);
+             løk.setState(chopped = true);
+  Ingrediens hakkedeTomater = new Tomater(1, Enhet.HERMETIKKBOKS);
+  Ingrediens kokosmelk = new Kokosmelk(1, Enhet.HERMETIKKBOKS);
+  Ingrediens vann = new Vann(6, Enhet.DESILITER);
+  Ingrediens buljong = new Grønnsaksbuljong(2, Enhet.TERNING);
+  Ingrediens hvitløk = new Hvitløk(1, Enhet.FEDD);
+             hvitløk.setState(chopped = true);
+  Ingrediens chili = new Chili(1, Enhet.STK);
+             chili.setState(chopped = true);
+  
+  Ingrediens krydder = new Collection<Krydder>("Salt", "Pepper", "Paprika", "Sukker");
+  Ingrediens rapsolje = new Rapsolje(1. Enhet.DESILITER);
+  
+  /* How-to */
+  public RoastedChickpeas(){
+    linser.drain();
+    
+    Equipment stekepanne = new Equipment();
+    Equipment kjele = new Kjele();
+    
+    stekepanne.brun(løk);
+    stekepanne.addAll(Collection<Ingrediens>[hvitløk, chili]);
+    
+    kjele.add(vann);
+    kjele.cook();
+    kjele.add(buljong);
+    kjele.add(linser);
+    
+    while (minutes < 25) {
+      Thread.sleep(60000);
+      minutes++; //la det koke i 20 minutter
+      if (minutes == 20) {
+        kjele.addAll(tomater, kokosmelk, krydder, løk, hvitløk, chili);
+      }
+    } 
+    
+    Equipment stavmikser = new Equipment();
+    stavmikser.miks(kjele);
+    
+    if(!kjele.taste == "awesome"){
+      kjele.add(krydder); //smak til etter behov
+    } else {
+      meal.done = true;
+    }
+    
+    boolean enjoyMeal = true;
+    
+  }
+
+}
